@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/TextView1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="484dp"
+        android:text="@string/button1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="484dp"
+        android:background="@color/grey"
+        android:text="@string/button3"
+        android:textColor="#FBF9F9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/button2"
+        app:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/start"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
